@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Ofrenda de Día de Muertos</title>
+  <desc id="desc">Ofrenda ilustrada con velas, papel picado, pan, flores de cempasúchil y un retrato enmarcado.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1">
+      <stop stop-color="#271039"/>
+      <stop offset="1" stop-color="#56234d"/>
+    </linearGradient>
+    <linearGradient id="cloth" x2="0" y2="1">
+      <stop stop-color="#f4b64b"/>
+      <stop offset="1" stop-color="#c54b32"/>
+    </linearGradient>
+    <linearGradient id="candle" x2="1">
+      <stop stop-color="#fff5c3"/>
+      <stop offset=".5" stop-color="#fffdf0"/>
+      <stop offset="1" stop-color="#e9d8a2"/>
+    </linearGradient>
+    <g id="marigold">
+      <g fill="#f57b20">
+        <ellipse cy="-16" rx="7" ry="17"/>
+        <ellipse cy="-16" rx="7" ry="17" transform="rotate(45)"/>
+        <ellipse cy="-16" rx="7" ry="17" transform="rotate(90)"/>
+        <ellipse cy="-16" rx="7" ry="17" transform="rotate(135)"/>
+        <ellipse cy="-16" rx="7" ry="17" transform="rotate(180)"/>
+        <ellipse cy="-16" rx="7" ry="17" transform="rotate(225)"/>
+        <ellipse cy="-16" rx="7" ry="17" transform="rotate(270)"/>
+        <ellipse cy="-16" rx="7" ry="17" transform="rotate(315)"/>
+      </g>
+      <circle r="9" fill="#ffc94e"/>
+    </g>
+  </defs>
+  <path fill="url(#wall)" d="M0 0h900v700H0z"/>
+  <g opacity=".95">
+    <path fill="#ed4b70" d="M47 0h124v92l-62-22-62 22z"/>
+    <path fill="#ffc857" d="M194 0h124v92l-62-22-62 22z"/>
+    <path fill="#67b996" d="M341 0h124v92l-62-22-62 22z"/>
+    <path fill="#9a68c4" d="M488 0h124v92l-62-22-62 22z"/>
+    <path fill="#ed4b70" d="M635 0h124v92l-62-22-62 22z"/>
+    <path fill="#ffc857" d="M782 0h118v92l-59-22-59 22z"/>
+    <g fill="none" stroke="#fff1d2" stroke-width="3">
+      <path d="M75 10h68v53H75zM221 10h70v53h-70zM368 10h70v53h-70zM515 10h70v53h-70zM662 10h70v53h-70zM808 10h67v53h-67z"/>
+      <circle cx="109" cy="36" r="15"/><circle cx="256" cy="36" r="15"/>
+      <circle cx="403" cy="36" r="15"/><circle cx="550" cy="36" r="15"/>
+      <circle cx="697" cy="36" r="15"/><circle cx="841" cy="36" r="15"/>
+    </g>
+  </g>
+  <path d="M0 610h900v90H0z" fill="#1c0c27"/>
+  <path d="M127 324h646v72H127z" fill="#8f442d"/>
+  <path d="M105 396h690v72H105z" fill="#a14a31"/>
+  <path d="M78 468h744v129H78z" fill="url(#cloth)"/>
+  <path d="M78 468h744v22H78z" fill="#ffd275"/>
+  <path d="M110 515h680M110 553h680" stroke="#f9d38c" stroke-width="3" opacity=".6"/>
+  <g transform="translate(375 168)">
+    <path d="M0 0h150v166H0z" fill="#dcae62" stroke="#f6d996" stroke-width="10"/>
+    <path d="M13 13h124v140H13z" fill="#332041"/>
+    <circle cx="75" cy="67" r="39" fill="#f0bb73"/>
+    <path d="M38 118q37-48 74 0v24H38z" fill="#c74c58"/>
+    <path d="M48 54q27-36 54 0" fill="none" stroke="#493047" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="62" cy="70" r="4" fill="#35213d"/><circle cx="88" cy="70" r="4" fill="#35213d"/>
+    <path d="M65 88q10 8 20 0" fill="none" stroke="#8c3d40" stroke-width="3" stroke-linecap="round"/>
+    <path d="M22 22l13 13m80-13-13 13M22 143l13-13m80 13-13-13" stroke="#ffd16b" stroke-width="4"/>
+  </g>
+  <g fill="#fff3d4">
+    <rect x="177" y="271" width="31" height="125" rx="7"/>
+    <rect x="692" y="271" width="31" height="125" rx="7"/>
+    <rect x="257" y="343" width="24" height="53" rx="6"/>
+    <rect x="619" y="343" width="24" height="53" rx="6"/>
+  </g>
+  <g fill="#ffc857">
+    <path d="M183 271q10-28 19 0-9 12-19 0M698 271q10-28 19 0-9 12-19 0"/>
+    <path d="M261 343q8-22 16 0-8 9-16 0M623 343q8-22 16 0-8 9-16 0"/>
+  </g>
+  <g fill="#ffe198" opacity=".25">
+    <circle cx="193" cy="285" r="43"/><circle cx="708" cy="285" r="43"/>
+  </g>
+  <path d="M426 426q24-29 48 0l-7 32h-34z" fill="#d99c4b"/>
+  <path d="M434 424q16-14 32 0" fill="none" stroke="#f7d58d" stroke-width="4"/>
+  <g transform="translate(320 454) scale(.9)"><use href="#marigold"/></g>
+  <g transform="translate(580 454) scale(.9)"><use href="#marigold"/></g>
+  <g transform="translate(145 453) scale(.75)"><use href="#marigold"/></g>
+  <g transform="translate(755 453) scale(.75)"><use href="#marigold"/></g>
+  <g fill="#71894a">
+    <path d="M320 452q-40-35-55-8 25 27 55 8M320 452q36-36 57-10-28 28-57 10"/>
+    <path d="M580 452q-38-33-54-7 26 26 54 7M580 452q38-32 54-5-26 25-54 5"/>
+  </g>
+  <g fill="#f5d894">
+    <circle cx="300" cy="197" r="4"/><circle cx="600" cy="186" r="4"/>
+    <circle cx="282" cy="248" r="3"/><circle cx="618" cy="245" r="3"/>
+  </g>
+</svg>

@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#210d32">
+    <meta name="description" content="Descubre la tradición mexicana del Día de Muertos mediante una galería, una ofrenda interactiva y un juego educativo.">
+    <title>Ofrenda de Recuerdos | Día de Muertos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="lluvia-cempasuchil" aria-hidden="true">
+        <span>🏵️</span>
+        <span>🏵️</span>
+        <span>🏵️</span>
+        <span>🏵️</span>
+        <span>🏵️</span>
+        <span>🏵️</span>
+        <span>🏵️</span>
+        <span>🏵️</span>
+    </div>
+
+    <header class="encabezado">
+        <div class="marca">✿ TRADICIÓN MEXICANA ✿</div>
+        <h1>🌼 Ofrenda de Recuerdos 🌼</h1>
+        <p>El amor permanece para siempre</p>
+    </header>
+
+    <div class="guirnalda" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <main>
+        <section class="presentacion">
+            <span class="etiqueta">UNA TRADICIÓN QUE NOS UNE</span>
+            <h2>Recordar es volver a vivir</h2>
+            <p>
+                Celebramos nuestras raíces, honramos nuestras tradiciones
+                y recordamos con cariño a quienes siempre estarán
+                en nuestro corazón.
+            </p>
+            <a class="boton-portada" href="#ofrenda">Descubrir la ofrenda ↓</a>
+        </section>
+
+        <section class="ofrenda" id="ofrenda">
+            <div class="decoracion" aria-hidden="true">
+                🏵️ 🕯️ 🌼 🕯️ 🏵️
+            </div>
+
+            <h2>Galería de recuerdos</h2>
+            <p class="subtitulo">
+                Cada recuerdo conserva una historia especial.
+            </p>
+
+            <div class="galeria">
+                <button id="anterior" class="flecha"
+                    type="button" aria-label="Imagen anterior">❮</button>
+
+                <div class="marco">
+                    <img id="imagenOfrenda"
+                         src="Foto.jpg"
+                         alt="Recuerdo familiar para la ofrenda del Día de Muertos"
+                         fetchpriority="high">
+
+                    <div class="texto-foto">
+                        <span>✿ UN RECUERDO ESPECIAL ✿</span>
+                        <h3 id="tituloFoto">Siempre en nuestro corazón</h3>
+                    </div>
+                </div>
+
+                <button id="siguiente" class="flecha"
+                    type="button" aria-label="Imagen siguiente">❯</button>
+            </div>
+
+            <div id="puntos" class="puntos" aria-label="Seleccionar imagen"></div>
+            <p id="contador" aria-live="polite">Imagen 1 de 4</p>
+
+            <div class="controles">
+                <button id="autoPlay" type="button">
+                    ▶ Recorrido automático
+                </button>
+                <button id="btnMusica" type="button">
+                    ♫ Reproducir música
+                </button>
+                <button id="cambiarFoto" type="button">
+                    📷 Cambiar esta foto
+                </button>
+                <input id="archivoFoto" class="entrada-oculta"
+                    type="file" accept="image/*" tabindex="-1"
+                    aria-hidden="true">
+            </div>
+
+            <p id="estadoFoto" class="nota-galeria" aria-live="polite">
+                Usa las flechas para elegir una foto y luego pulsa “Cambiar esta foto”.
+            </p>
+
+            <audio id="musica" loop preload="none">
+                <source src="Muertos.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <div class="separador" aria-hidden="true">
+            <span>🏵️</span><i>✦</i><span>🕯️</span><i>✦</i><span>💀</span>
+        </div>
+
+        <section class="elementos" id="elementos">
+            <span class="etiqueta">EL SIGNIFICADO DE NUESTRAS RAÍCES</span>
+            <h2>✨ Elementos de nuestra ofrenda ✨</h2>
+            <p class="subtitulo">
+                Pulsa cada tarjeta para conocer su significado.
+            </p>
+
+            <div class="tarjetas">
+                <button class="tarjeta" type="button" data-detalle="flores">
+                    <span class="icono-tarjeta">🌼</span>
+                    <h3>Cempasúchil</h3>
+                    <p>Color, aroma y guía simbólica.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-detalle="velas">
+                    <span class="icono-tarjeta">🕯️</span>
+                    <h3>Velas</h3>
+                    <p>La luz que acompaña el recuerdo.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-detalle="pan">
+                    <span class="icono-tarjeta">🥖</span>
+                    <h3>Pan de muerto</h3>
+                    <p>Un alimento de nuestra tradición.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-detalle="papel">
+                    <span class="icono-tarjeta">🎊</span>
+                    <h3>Papel picado</h3>
+                    <p>Color y alegría en la celebración.</p>
+                </button>
+            </div>
+
+            <div id="detalle" class="detalle" aria-live="polite">
+                <span>🌟</span>
+                <p>Selecciona un elemento para descubrir su significado.</p>
+            </div>
+        </section>
+
+        <div class="separador" aria-hidden="true">
+            <span>🌼</span><i>✦</i><span>🕯️</span><i>✦</i><span>🏵️</span>
+        </div>
+
+        <section class="juego" id="reto">
+            <span class="etiqueta">PON A PRUEBA TUS CONOCIMIENTOS</span>
+            <h2>🕯️ El reto de la ofrenda</h2>
+            <p class="intro-juego">
+                Responde las preguntas y descubre cuánto sabes
+                sobre esta hermosa tradición mexicana.
+            </p>
+
+            <div class="panel-juego">
+                <div class="barra-progreso">
+                    <span id="progresoPregunta">Pregunta 1 de 4</span>
+                    <span id="marcador">⭐ 0 puntos</span>
+                </div>
+
+                <div class="progreso-fondo">
+                    <div id="progresoBarra" class="progreso-barra"></div>
+                </div>
+
+                <h3 id="pregunta">
+                    ¿Qué flor se utiliza tradicionalmente en la ofrenda?
+                </h3>
+
+                <div id="opciones" class="opciones"></div>
+
+                <p id="mensajeJuego" aria-live="polite">
+                    Elige una respuesta para continuar.
+                </p>
+
+                <button id="siguientePregunta" class="boton-juego"
+                    type="button" disabled>
+                    Siguiente pregunta →
+                </button>
+
+                <div id="resultadoJuego" hidden>
+                    <div class="trofeo">🏆</div>
+                    <h3>¡Reto completado!</h3>
+                    <p id="puntuacionFinal"></p>
+                    <button id="reiniciarJuego" class="boton-juego"
+                        type="button">Volver a jugar ↻</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="separador" aria-hidden="true">
+            <span>🏵️</span><i>✦</i><span>💀</span><i>✦</i><span>🏵️</span>
+        </div>
+
+        <section class="despedida">
+            <span>🧡 🏵️ 🕯️ 🏵️ 🧡</span>
+            <h2>Mientras haya recuerdos, vivirán en nosotros.</h2>
+            <p>
+                Honremos nuestras tradiciones y mantengamos viva
+                la memoria de quienes dejaron huella en nuestra vida.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con cariño 🧡 | Día de Muertos</p>
+        <p>Una celebración de la cultura y las tradiciones mexicanas.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

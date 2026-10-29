@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Flores de cempasúchil</title>
+  <desc id="desc">Ilustración de flores naranjas de cempasúchil sobre un fondo morado al anochecer.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#251039"/>
+      <stop offset="1" stop-color="#70294d"/>
+    </linearGradient>
+    <radialGradient id="petal" cx=".45" cy=".35">
+      <stop stop-color="#ffe477"/>
+      <stop offset=".58" stop-color="#ff9b24"/>
+      <stop offset="1" stop-color="#e84b18"/>
+    </radialGradient>
+    <radialGradient id="center">
+      <stop stop-color="#6b2419"/>
+      <stop offset=".72" stop-color="#a84016"/>
+      <stop offset="1" stop-color="#f7be35"/>
+    </radialGradient>
+    <g id="flower">
+      <g fill="url(#petal)">
+        <ellipse cy="-79" rx="24" ry="55"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(22.5)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(45)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(67.5)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(90)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(112.5)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(135)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(157.5)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(180)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(202.5)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(225)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(247.5)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(270)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(292.5)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(315)"/>
+        <ellipse cy="-79" rx="24" ry="55" transform="rotate(337.5)"/>
+      </g>
+      <circle r="49" fill="url(#center)"/>
+      <circle r="34" fill="none" stroke="#ffd45c" stroke-width="4" stroke-dasharray="3 8"/>
+    </g>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h900v700H0z"/>
+  <circle cx="734" cy="142" r="72" fill="#ffd47a" opacity=".92"/>
+  <circle cx="734" cy="142" r="98" fill="#ffc857" opacity=".12"/>
+  <path d="M0 520q180-70 345 0t350-6 205-8v194H0z" fill="#25102f"/>
+  <g fill="#ffd47a" opacity=".8">
+    <circle cx="125" cy="105" r="3"/><circle cx="224" cy="170" r="4"/>
+    <circle cx="366" cy="91" r="3"/><circle cx="522" cy="188" r="3"/>
+    <circle cx="834" cy="300" r="4"/><circle cx="90" cy="347" r="3"/>
+    <circle cx="410" cy="277" r="4"/><circle cx="626" cy="75" r="3"/>
+  </g>
+  <path d="M0 580q120-100 240 0t240 0 240 0 180-15" fill="none" stroke="#496a39" stroke-width="13"/>
+  <g fill="#719246">
+    <path d="M204 574q-79-75-117-25 46 53 117 25M285 592q44-82 105-53-25 61-105 53M620 570q-76-82-118-34 47 61 118 34M705 579q47-81 101-49-32 58-101 49"/>
+  </g>
+  <g transform="translate(185 474) scale(.8)"><use href="#flower"/></g>
+  <g transform="translate(437 430) scale(1.13)"><use href="#flower"/></g>
+  <g transform="translate(704 476) scale(.84)"><use href="#flower"/></g>
+  <g transform="translate(328 622) scale(.45)"><use href="#flower"/></g>
+  <g transform="translate(561 626) scale(.48)"><use href="#flower"/></g>
+</svg>

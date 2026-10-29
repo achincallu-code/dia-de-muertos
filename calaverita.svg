@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Calaverita de azúcar decorada</title>
+  <desc id="desc">Calaverita de azúcar colorida con flores y motivos decorativos tradicionales del Día de Muertos.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#211035"/>
+      <stop offset=".55" stop-color="#51214f"/>
+      <stop offset="1" stop-color="#291339"/>
+    </linearGradient>
+    <linearGradient id="skull" x2="0" y2="1">
+      <stop stop-color="#fff7df"/>
+      <stop offset="1" stop-color="#e8c994"/>
+    </linearGradient>
+    <radialGradient id="flower">
+      <stop stop-color="#ffd568"/>
+      <stop offset=".6" stop-color="#f38435"/>
+      <stop offset="1" stop-color="#d94b55"/>
+    </radialGradient>
+    <g id="flowerMark">
+      <g fill="url(#flower)">
+        <ellipse cy="-22" rx="10" ry="22"/>
+        <ellipse cy="-22" rx="10" ry="22" transform="rotate(60)"/>
+        <ellipse cy="-22" rx="10" ry="22" transform="rotate(120)"/>
+        <ellipse cy="-22" rx="10" ry="22" transform="rotate(180)"/>
+        <ellipse cy="-22" rx="10" ry="22" transform="rotate(240)"/>
+        <ellipse cy="-22" rx="10" ry="22" transform="rotate(300)"/>
+      </g>
+      <circle r="9" fill="#fff0a8"/>
+      <circle r="4" fill="#a63452"/>
+    </g>
+  </defs>
+  <path fill="url(#background)" d="M0 0h900v700H0z"/>
+  <g fill="#ffd875" opacity=".7">
+    <circle cx="112" cy="102" r="4"/><circle cx="774" cy="118" r="4"/>
+    <circle cx="145" cy="514" r="3"/><circle cx="757" cy="496" r="3"/>
+    <circle cx="242" cy="182" r="3"/><circle cx="667" cy="191" r="3"/>
+  </g>
+  <circle cx="450" cy="350" r="244" fill="#ffb84d" opacity=".08"/>
+  <g transform="translate(450 357)">
+    <path d="M-163-117q0-154 163-154t163 154v91q0 52-43 85l-42 33v62q0 25-25 25h-106q-25 0-25-25v-62l-42-33q-43-33-43-85z" fill="url(#skull)" stroke="#d7ad73" stroke-width="8"/>
+    <path d="M-111-77q38-49 77 0-8 54-39 54t-38-54M34-77q38-49 77 0-8 54-39 54t-38-54" fill="#38203d" stroke="#d94f68" stroke-width="9"/>
+    <path d="M-112-76q39-28 76 0M35-76q38-28 76 0" fill="none" stroke="#ffc857" stroke-width="5" stroke-dasharray="4 9"/>
+    <circle cx="-73" cy="-57" r="12" fill="#70bb91"/><circle cx="73" cy="-57" r="12" fill="#70bb91"/>
+    <path d="M0-16l-20 39h40z" fill="#7c3151"/>
+    <path d="M-52 46q52 48 104 0v47q-52 47-104 0z" fill="#592d49"/>
+    <path d="M-35 50v49m18-43v54m34-54v54m18-60v49" stroke="#fff0cb" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-142-119q25-27 50 0t50 0 50 0 50 0 50 0 50 0" fill="none" stroke="#e95773" stroke-width="8"/>
+    <path d="M-108 116q25-20 50 0t50 0 50 0 50 0" fill="none" stroke="#69ad89" stroke-width="8"/>
+    <circle cx="0" cy="-184" r="25" fill="#f5ae45" stroke="#c94c60" stroke-width="7"/>
+    <path d="M-13-184h26m-13-13v26" stroke="#fff0cb" stroke-width="5"/>
+    <circle cx="-130" cy="-6" r="10" fill="#e1a342"/><circle cx="130" cy="-6" r="10" fill="#e1a342"/>
+    <path d="M-118 20l22 10m192-10L74 30" stroke="#e1a342" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(253 204)"><use href="#flowerMark"/></g>
+  <g transform="translate(647 204)"><use href="#flowerMark"/></g>
+  <g transform="translate(255 508) scale(.8)"><use href="#flowerMark"/></g>
+  <g transform="translate(645 508) scale(.8)"><use href="#flowerMark"/></g>
+  <path d="M91 608q120-74 240 0t240 0 238 0" fill="none" stroke="#f0a744" stroke-width="5" opacity=".8"/>
+  <g fill="#ffc857">
+    <path d="M118 593l8 14-8 14-8-14zM780 593l8 14-8 14-8-14z"/>
+    <circle cx="450" cy="608" r="8"/><circle cx="423" cy="608" r="4"/><circle cx="477" cy="608" r="4"/>
+  </g>
+</svg>
