@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">Pan de muerto con huesitos</title>
+  <defs>
+    <linearGradient id="pan" x2="0" y2="1"><stop stop-color="#f7d68e"/><stop offset=".65" stop-color="#df9a51"/><stop offset="1" stop-color="#b96742"/></linearGradient>
+    <radialGradient id="dorado"><stop stop-color="#fff0bd" stop-opacity=".8"/><stop offset="1" stop-color="#fff0bd" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="50" cy="81" rx="37" ry="9" fill="#241a28" opacity=".2"/>
+  <path d="M15 58Q13 31 34 26q5-15 16-10 10-6 16 10 21 5 19 32-2 23-35 24-33-1-35-24" fill="url(#pan)" stroke="#9f583d" stroke-width="3"/>
+  <ellipse cx="50" cy="46" rx="34" ry="25" fill="url(#dorado)"/>
+  <path d="M31 31q-7 16 2 30m36-30q7 16-2 30M50 26q-8 9-7 20 1 8 7 12 6-4 7-12 1-11-7-20" fill="none" stroke="#fff0c0" stroke-width="7" stroke-linecap="round"/>
+  <path d="M30 47q10 2 14 11m26-11q-10 2-14 11" fill="none" stroke="#fff0c0" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#fff0c0"><circle cx="30" cy="32" r="4"/><circle cx="33" cy="61" r="4"/><circle cx="70" cy="32" r="4"/><circle cx="67" cy="61" r="4"/><circle cx="43" cy="24" r="3"/><circle cx="57" cy="24" r="3"/></g>
+  <path d="M17 63q9 13 25 14m41-14q-9 13-25 14" fill="none" stroke="#c67a45" stroke-width="3" opacity=".7"/>
+</svg>

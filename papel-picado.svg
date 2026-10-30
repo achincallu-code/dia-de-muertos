@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 76" role="img" aria-labelledby="title">
+  <title id="title">Banderitas de papel picado recortado</title>
+  <path d="M8 12Q60 1 112 12" fill="none" stroke="#8a586a" stroke-width="3"/>
+  <path fill="#d76670" fill-rule="evenodd" d="M12 11h27v49l-5-5-4 5-5-5-4 5-4-5-5 5z M30 20a4 4 0 1 1-8 0a4 4 0 1 1 8 0 M30 34a4 4 0 1 1-8 0a4 4 0 1 1 8 0 M22 27a3 3 0 1 1-6 0a3 3 0 1 1 6 0 M36 27a3 3 0 1 1-6 0a3 3 0 1 1 6 0"/>
+  <path fill="#e7ab51" fill-rule="evenodd" d="M47 8h27v49l-5-5-4 5-5-5-4 5-4-5-5 5z M60 17l2 6 6-2-3 6 6 3-7 1 1 7-5-4-5 4 1-7-7-1 6-3-3-6 6 2z M53 43h5v5h-5z M65 43h5v5h-5z"/>
+  <path fill="#6da78d" fill-rule="evenodd" d="M81 11h27v49l-5-5-4 5-5-5-4 5-4-5-5 5z M99 20a4 4 0 1 1-8 0a4 4 0 1 1 8 0 M99 34a4 4 0 1 1-8 0a4 4 0 1 1 8 0 M91 27a3 3 0 1 1-6 0a3 3 0 1 1 6 0 M105 27a3 3 0 1 1-6 0a3 3 0 1 1 6 0"/>
+</svg>

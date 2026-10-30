@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" role="img" aria-labelledby="title">
+  <title id="title">Retrato ilustrado de una persona querida</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f6dcae"/><stop offset="1" stop-color="#cf8c6b"/></linearGradient>
+    <linearGradient id="shirt" x2="0" y2="1"><stop stop-color="#9b4d58"/><stop offset="1" stop-color="#63334d"/></linearGradient>
+  </defs>
+  <rect width="240" height="260" fill="url(#bg)"/>
+  <circle cx="120" cy="108" r="80" fill="#f8e8c8" opacity=".45"/>
+  <path d="M35 260c8-56 37-83 85-83s77 27 85 83" fill="url(#shirt)"/>
+  <path d="M76 103c-8-47 12-75 45-75 37 0 55 31 45 77l-10 44H82z" fill="#3b2836"/>
+  <ellipse cx="120" cy="111" rx="48" ry="58" fill="#c77f60"/>
+  <path d="M73 103c-2-44 17-70 48-70 29 0 46 18 49 52-17-8-28-22-34-36-14 22-36 39-63 45z" fill="#3b2836"/>
+  <path d="M94 111q9-7 18 0m17 0q9-7 18 0" fill="none" stroke="#503342" stroke-width="4" stroke-linecap="round"/>
+  <path d="M105 144q15 12 30 0" fill="none" stroke="#8e4850" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="218" r="9" fill="#e7b767"/>
+  <path d="M18 42q12-21 24 0-12 21-24 0m156 160q12-21 24 0-12 21-24 0" fill="#e9a23f" opacity=".85"/>
+</svg>

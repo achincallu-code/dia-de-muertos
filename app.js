@@ -30,7 +30,7 @@ const fotos = [
 
 const significados = {
     flores: {
-        icono: "🌼",
+        icono: "🏵️",
         texto: "El cempasúchil es una flor emblemática del Día de Muertos. Su color y aroma se asocian tradicionalmente con el camino simbólico que guía a las almas."
     },
     velas: {
@@ -38,11 +38,11 @@ const significados = {
         texto: "Las velas representan la luz, la esperanza y la guía para recordar simbólicamente a los seres queridos."
     },
     pan: {
-        icono: "🥖",
+        ilustracion: "pan-de-muerto.svg",
         texto: "El pan de muerto es un alimento tradicional que se coloca en las ofrendas como parte de esta celebración mexicana."
     },
     papel: {
-        icono: "🎊",
+        ilustracion: "papel-picado.svg",
         texto: "El papel picado aporta color y movimiento a la ofrenda. Sus diseños forman parte de la decoración tradicional."
     }
 };
@@ -337,7 +337,17 @@ tarjetas.forEach((tarjeta) => {
         if (!significado) return;
 
         const icono = document.createElement("span");
-        icono.textContent = significado.icono;
+        icono.className = "icono-detalle";
+
+        if (significado.ilustracion) {
+            const ilustracion = document.createElement("img");
+            ilustracion.className = "icono-elemento";
+            ilustracion.src = significado.ilustracion;
+            ilustracion.alt = "";
+            icono.appendChild(ilustracion);
+        } else {
+            icono.textContent = significado.icono;
+        }
 
         const texto = document.createElement("p");
         texto.textContent = significado.texto;
@@ -543,9 +553,141 @@ reiniciarJuego.addEventListener("click", () => {
 });
 
 // ======================================
-// 9. INICIAR LA PÁGINA
+// 9. ALTAR INTERACTIVO
+// ======================================
+
+const velasAltar = document.querySelectorAll(".vela");
+const formularioDedicatoria = document.getElementById("formDedicatoria");
+const entradaDedicatoria = document.getElementById("nombreDedicatoria");
+const nombreRecuerdo = document.getElementById("nombreRecuerdo");
+const mensajeAltar = document.getElementById("mensajeAltar");
+const fotosRecuerdo = [
+    { input: document.getElementById("subirPersona"), image: document.getElementById("fotoPersona"), key: "ofrendaRetratoPersona" },
+    { input: document.getElementById("subirAnimal"), image: document.getElementById("fotoAnimal"), key: "ofrendaRetratoAnimal" }
+];
+
+fotosRecuerdo.forEach(({ input, image, key }) => {
+    try {
+        const fotoGuardada = localStorage.getItem(key);
+        if (fotoGuardada?.startsWith("data:image/")) image.src = fotoGuardada;
+    } catch (error) {
+        console.info("Las fotos del altar solo estarán disponibles durante esta visita.", error);
+    }
+
+    input.addEventListener("change", async () => {
+        const archivo = input.files?.[0];
+        input.value = "";
+        if (!archivo) return;
+
+        if (!archivo.type.startsWith("image/")) {
+            mensajeAltar.textContent = "Elige un archivo de imagen para este recuerdo.";
+            return;
+        }
+
+        try {
+            const bitmap = await createImageBitmap(archivo);
+            const escala = Math.min(1, 800 / Math.max(bitmap.width, bitmap.height));
+            const lienzo = document.createElement("canvas");
+            lienzo.width = Math.round(bitmap.width * escala);
+            lienzo.height = Math.round(bitmap.height * escala);
+            lienzo.getContext("2d").drawImage(bitmap, 0, 0, lienzo.width, lienzo.height);
+            bitmap.close();
+
+            const fotoComprimida = lienzo.toDataURL("image/jpeg", 0.72);
+            image.src = fotoComprimida;
+            image.classList.add("foto-cargada");
+            try {
+                localStorage.setItem(key, fotoComprimida);
+                mensajeAltar.textContent = "Foto añadida al altar; el recuerdo se guardó en este navegador.";
+            } catch (error) {
+                mensajeAltar.textContent = "Foto añadida al altar. No hubo espacio para guardarla después de cerrar la página.";
+            }
+        } catch (error) {
+            console.error("No se pudo preparar la foto del altar:", error);
+            mensajeAltar.textContent = "No se pudo cargar esa foto. Prueba con otra imagen.";
+        }
+    });
+});
+
+velasAltar.forEach((vela, posicion) => {
+    vela.addEventListener("click", () => {
+        const encendida = vela.classList.toggle("encendida");
+        vela.setAttribute("aria-pressed", String(encendida));
+        vela.setAttribute(
+            "aria-label",
+            `${encendida ? "Apagar" : "Encender"} vela ${posicion === 0 ? "izquierda" : "derecha"}`
+        );
+
+        const velasEncendidas = [...velasAltar].filter((item) =>
+            item.classList.contains("encendida")
+        ).length;
+        mensajeAltar.textContent = velasEncendidas
+            ? `${velasEncendidas === 1 ? "Una vela" : `${velasEncendidas} velas`} mantiene${velasEncendidas === 1 ? "" : "n"} viva la luz del recuerdo.`
+            : "La luz espera. Toca una vela para volver a encenderla.";
+    });
+});
+
+formularioDedicatoria.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+    const nombre = entradaDedicatoria.value.trim();
+
+    if (!nombre) {
+        entradaDedicatoria.focus();
+        mensajeAltar.textContent = "Escribe un nombre o recuerdo para dedicar esta luz.";
+        return;
+    }
+
+    nombreRecuerdo.textContent = nombre;
+    velasAltar.forEach((vela, posicion) => {
+        vela.classList.add("encendida");
+        vela.setAttribute("aria-pressed", "true");
+        vela.setAttribute("aria-label", `Apagar vela ${posicion === 0 ? "izquierda" : "derecha"}`);
+    });
+    mensajeAltar.textContent = `La luz de este altar está dedicada a ${nombre}.`;
+    entradaDedicatoria.value = "";
+});
+
+// ======================================
+// 10. PUENTE DE CEMPASÚCHIL
+// ======================================
+
+const escenaPuente = document.getElementById("escenaPuente");
+const botonPuente = document.getElementById("encenderPuente");
+const mensajePuente = document.getElementById("mensajePuente");
+
+botonPuente.addEventListener("click", () => {
+    const encendido = escenaPuente.classList.toggle("puente-encendido");
+    botonPuente.setAttribute("aria-pressed", String(encendido));
+    botonPuente.textContent = encendido ? "✧ Apagar el camino" : "✧ Encender el camino";
+    mensajePuente.textContent = encendido
+        ? "El puente está iluminado. Xólotl y Yolotl te acompañan."
+        : "Los alebrijes esperan para acompañarte.";
+});
+
+// ======================================
+// 11. INICIAR LA PÁGINA
 // ======================================
 
 crearPuntos();
 mostrarFoto();
 mostrarPregunta();
+
+// Aparición progresiva de cada sección al entrar en pantalla.
+if (
+    "IntersectionObserver" in window &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+) {
+    document.documentElement.classList.add("movimiento-listo");
+    const observadorSecciones = new IntersectionObserver((entradas, observador) => {
+        entradas.forEach((entrada) => {
+            if (!entrada.isIntersecting) return;
+
+            entrada.target.classList.add("visible");
+            observador.unobserve(entrada.target);
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".animar-entrada").forEach((seccion) => {
+        observadorSecciones.observe(seccion);
+    });
+}

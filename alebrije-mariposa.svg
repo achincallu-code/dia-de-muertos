@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-labelledby="title desc">
+  <title id="title">Yolotl, espíritu alebrije</title>
+  <desc id="desc">Una criatura fantástica con alas de mariposa, plumas turquesa y cola luminosa.</desc>
+  <defs>
+    <linearGradient id="alaSuperior" x2=".9" y2="1"><stop stop-color="#f3c967"/><stop offset=".48" stop-color="#eb7f78"/><stop offset="1" stop-color="#a35da9"/></linearGradient>
+    <linearGradient id="alaInferior" x2="1" y2="1"><stop stop-color="#6ed9ca"/><stop offset=".55" stop-color="#438cb4"/><stop offset="1" stop-color="#6654a3"/></linearGradient>
+    <linearGradient id="pecho" x2="0" y2="1"><stop stop-color="#7de0ca"/><stop offset="1" stop-color="#3696a0"/></linearGradient>
+  </defs>
+  <!-- Alas de mariposa con bordes y ojos de color -->
+  <path d="M119 128Q62 28 27 57 2 77 44 129 4 134 19 173q14 34 81 14l30-39z" fill="url(#alaSuperior)" stroke="#392f5d" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M161 128q57-100 92-71 25 20-17 72 40 5 25 44-14 34-81 14l-30-39z" fill="url(#alaSuperior)" stroke="#392f5d" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M108 165q-54 17-49 64 8 29 61 12l20-41m32-35q54 17 49 64-8 29-61 12l-20-41" fill="url(#alaInferior)" stroke="#392f5d" stroke-width="6" stroke-linejoin="round"/>
+  <g fill="none" stroke="#ffe5a0" stroke-width="4" opacity=".94">
+    <path d="M107 131Q61 63 41 69m63 80Q48 114 29 135m75 29q-39 20-60 15m144-48q46-68 66-62m-63 80q56-35 75-16m-75 42q39 20 60 15"/>
+  </g>
+  <g fill="#fff1ae" stroke="#a24f7f" stroke-width="4">
+    <circle cx="65" cy="112" r="13"/><circle cx="215" cy="112" r="13"/><circle cx="90" cy="188" r="10"/><circle cx="190" cy="188" r="10"/>
+  </g>
+  <g fill="#e86e79"><circle cx="65" cy="112" r="5"/><circle cx="215" cy="112" r="5"/><circle cx="90" cy="188" r="4"/><circle cx="190" cy="188" r="4"/></g>
+  <!-- Cola de plumas iridiscentes -->
+  <path d="M156 185q36 31 23 61-13 24-31 6-8 26-30 17-21-13-3-52" fill="#e88b6f" stroke="#392f5d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m151 209-20 43m38-36-16 42m-38-26 24-13" fill="none" stroke="#ffe59a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Cuerpo, patas, cuello y cabeza fantástica -->
+  <path d="M110 114q30-23 60 0l-7 83q-22 32-46 0z" fill="url(#pecho)" stroke="#392f5d" stroke-width="5"/>
+  <path d="m122 190-14 48m51-48 14 48" fill="none" stroke="#e77c6b" stroke-width="12" stroke-linecap="round"/>
+  <path d="m108 237-13 8m75-8 13 8" stroke="#f4cc70" stroke-width="5" stroke-linecap="round"/>
+  <path d="m110 91-20-31q-8-14 8-12l34 20m28 23 20-31q8-14-8-12l-34 20" fill="#bc63a3" stroke="#392f5d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M97 102q3-41 43-43 41 2 44 43-3 45-44 48-41-3-43-48" fill="#eead62" stroke="#392f5d" stroke-width="5"/>
+  <path d="M109 103q8-10 16 0m24 0q8-10 16 0" fill="none" stroke="#263750" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="117" cy="102" r="2" fill="#fff4c4"/><circle cx="155" cy="102" r="2" fill="#fff4c4"/>
+  <path d="M127 122q13-10 26 0l-13 11z" fill="#77426d"/>
+  <path d="M140 132v8m0 0q-8 8-15 0m15 0q8 8 15 0" fill="none" stroke="#75446c" stroke-width="3" stroke-linecap="round"/>
+  <path d="m140 61 5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z" fill="#fff0a4"/>
+  <g fill="#ffe79b"><circle cx="109" cy="166" r="5"/><circle cx="171" cy="166" r="5"/><circle cx="140" cy="188" r="5"/><circle cx="140" cy="224" r="4"/></g>
+</svg>

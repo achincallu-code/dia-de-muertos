@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">El puente de cempasúchil</title>
+  <desc id="desc">Un puente elevado de pétalos dorados cruza un río hacia un pueblo iluminado al anochecer.</desc>
+  <defs>
+    <linearGradient id="cielo" x2="0" y2="1"><stop stop-color="#151226"/><stop offset=".5" stop-color="#382342"/><stop offset="1" stop-color="#a8545b"/></linearGradient>
+    <linearGradient id="agua" x2="0" y2="1"><stop stop-color="#463257"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="camino" x2="0" y2="1"><stop stop-color="#ffd66c"/><stop offset=".35" stop-color="#f3a541"/><stop offset="1" stop-color="#bc573d"/></linearGradient>
+    <linearGradient id="luzPueblo" x2="0" y2="1"><stop stop-color="#ffe5a1"/><stop offset="1" stop-color="#f0974e"/></linearGradient>
+    <radialGradient id="resplandor"><stop stop-color="#ffd978" stop-opacity=".82"/><stop offset="1" stop-color="#e9813d" stop-opacity="0"/></radialGradient>
+    <filter id="desenfoque"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="brillo"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="420" fill="url(#cielo)"/>
+  <ellipse cx="505" cy="184" rx="355" ry="205" fill="url(#resplandor)" opacity=".7"/>
+  <circle cx="814" cy="70" r="31" fill="#f9dda0" opacity=".88"/>
+  <circle cx="828" cy="60" r="31" fill="#31213e"/>
+  <g fill="#fff0c7" opacity=".86">
+    <circle cx="77" cy="61" r="2"/><circle cx="153" cy="119" r="1.8"/><circle cx="220" cy="48" r="2"/><circle cx="328" cy="92" r="1.5"/><circle cx="405" cy="43" r="2"/><circle cx="612" cy="58" r="1.7"/><circle cx="699" cy="126" r="2"/><circle cx="924" cy="147" r="1.8"/><circle cx="952" cy="45" r="1.5"/>
+  </g>
+  <g fill="#fff0c7" opacity=".65"><path d="m278 108 3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="m644 82 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path d="m112 164 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
+  <!-- Lomas y tejados del pueblo al otro lado del río -->
+  <path d="M0 235 104 159l76 44 94-105 91 112 94-79 91 84 94-108 90 99 95-67 171 88v85H0z" fill="#30203d"/>
+  <path d="M0 261 115 211l87 38 101-79 83 81 114-73 111 82 90-88 102 76 91-45 116 70v65H0z" fill="#432744"/>
+  <g fill="#39253c" stroke="#d78259" stroke-opacity=".42" stroke-width="2">
+    <path d="M431 188v-44l25-20 25 20v44z"/><path d="M488 188V111h27v77z"/><path d="M526 188v-58l25-18 25 18v58z"/>
+    <path d="M580 188v-38l21-16 21 16v38z"/><path d="M385 188v-30l18-14 18 14v30z"/>
+  </g>
+  <g fill="url(#luzPueblo)" filter="url(#brillo)">
+    <path d="M441 151h7v12h-7zm25 0h7v12h-7zm31-25h8v16h-8zm30 37h7v12h-7zm37-29h7v13h-7zm-165 13h6v11h-6z"/>
+  </g>
+  <path d="M0 277q143-42 272-5t252 1 255-3 221 8v142H0z" fill="url(#agua)"/>
+  <g fill="none" stroke="#ab83bd" stroke-opacity=".36" stroke-width="3">
+    <path d="M14 331q129-23 249 3t241 1 244-2 233 7"/><path d="M52 377q111-19 216 2t218 1 224-1 237 6"/><path d="M122 302q77-13 151 2m466 0q77-13 151 2"/>
+  </g>
+  <!-- Arcos y pilares que sostienen el paso -->
+  <path d="M126 251q374 263 748 0" fill="none" stroke="#6d3d50" stroke-width="24" opacity=".9"/>
+  <path d="M126 251q374 263 748 0" fill="none" stroke="#df8b53" stroke-width="6" opacity=".88"/>
+  <path d="M194 270v75m107-19v69m398-69v69m107-125v56" stroke="#d78750" stroke-width="13" opacity=".88"/>
+  <ellipse cx="500" cy="302" rx="375" ry="86" fill="#f99d3c" opacity=".18" filter="url(#desenfoque)"/>
+  <!-- Calzada en perspectiva -->
+  <path d="M440 153h120l385 267H55z" fill="url(#camino)" stroke="#ffda7b" stroke-width="5"/>
+  <path d="M465 163h70l333 257H132z" fill="#f6ac48" opacity=".4"/>
+  <path d="M440 153 55 420M560 153l385 267" fill="none" stroke="#ffe08a" stroke-width="10"/>
+  <path d="M451 159 86 403M549 159l365 244" fill="none" stroke="#fff0b4" stroke-width="2" stroke-dasharray="3 12" opacity=".92"/>
+  <!-- Faroles de papel a los lados del puente -->
+  <g stroke="#6f3b4b" stroke-width="4" fill="none">
+    <path d="M389 190v-27m222 27v-27m-328 82v-29m548 29v-29"/>
+  </g>
+  <g fill="#ffd76f" filter="url(#brillo)">
+    <path d="M379 159h20l-3 20h-14zm222 0h20l-3 20h-14zm-329 51h18l-3 19h-12zm420 0h18l-3 19h-12z"/>
+  </g>
+  <!-- Flores que marcan el camino -->
+  <g fill="#ffd15d">
+    <circle cx="478" cy="168" r="5"/><circle cx="522" cy="168" r="5"/><circle cx="430" cy="188" r="5"/><circle cx="570" cy="188" r="5"/>
+    <circle cx="382" cy="222" r="5"/><circle cx="618" cy="222" r="5"/><circle cx="318" cy="267" r="6"/><circle cx="682" cy="267" r="6"/>
+    <circle cx="239" cy="322" r="7"/><circle cx="761" cy="322" r="7"/><circle cx="143" cy="389" r="8"/><circle cx="857" cy="389" r="8"/>
+  </g>
+  <g fill="#f39b39">
+    <path d="M25 395q11-17 22 0-11 17-22 0m18 0q11-17 22 0-11 17-22 0m18 0q11-17 22 0-11 17-22 0m-27 16q11-17 22 0-11 17-22 0m18 0q11-17 22 0-11 17-22 0"/>
+    <path d="M913 395q11-17 22 0-11 17-22 0m18 0q11-17 22 0-11 17-22 0m18 0q11-17 22 0-11 17-22 0m-27 16q11-17 22 0-11 17-22 0m18 0q11-17 22 0-11 17-22 0"/>
+  </g>
+</svg>

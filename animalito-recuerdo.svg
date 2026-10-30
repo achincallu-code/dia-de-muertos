@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" role="img" aria-labelledby="title">
+  <title id="title">Retrato ilustrado de un animalito querido</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f1d7a8"/><stop offset="1" stop-color="#bc795e"/></linearGradient>
+    <linearGradient id="fur" x2="0" y2="1"><stop stop-color="#e4bd83"/><stop offset="1" stop-color="#b97855"/></linearGradient>
+  </defs>
+  <rect width="240" height="260" fill="url(#bg)"/>
+  <circle cx="120" cy="112" r="83" fill="#f8e8c8" opacity=".42"/>
+  <path d="M42 260c5-52 34-80 78-80s73 28 78 80" fill="#607465"/>
+  <path d="M74 90 49 48q-8-20 12-12l47 30m58 24 25-42q8-20-12-12l-46 30" fill="#a96850" stroke="#854f48" stroke-width="5"/>
+  <path d="M68 119c0-43 21-70 52-70s52 27 52 70-22 67-52 67-52-24-52-67" fill="url(#fur)"/>
+  <path d="M79 118q11-11 22 0m38 0q11-11 22 0" fill="none" stroke="#493340" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="120" cy="145" rx="29" ry="22" fill="#f0dfc4"/>
+  <path d="M112 137q8-8 16 0l-8 8z" fill="#513443"/>
+  <path d="M120 145v9m0 0q-11 12-20 0m20 0q11 12 20 0" fill="none" stroke="#71424b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M75 155 42 147m34 18-35 1m124-11 33-8m-34 18 35 1" stroke="#fff0d8" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+  <path d="M102 189 120 206l18-17" fill="#d77a56" stroke="#f0d9b2" stroke-width="3"/>
+  <circle cx="34" cy="47" r="7" fill="#f4b957"/><circle cx="204" cy="196" r="7" fill="#f4b957"/>
+</svg>
