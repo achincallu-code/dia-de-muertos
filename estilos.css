@@ -26,6 +26,7 @@ body {
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
+    isolation: isolate;
     font-family: 'Poppins', Arial, sans-serif;
     color: var(--blanco);
     text-align: center;
@@ -2109,10 +2110,18 @@ body::after { display: none; }
 
 .marco-dia-muertos {
     position: fixed;
-    z-index: 24;
+    z-index: 0;
     inset: 0;
     overflow: hidden;
     pointer-events: none;
+}
+
+.encabezado,
+.guirnalda,
+main,
+footer {
+    position: relative;
+    z-index: 1;
 }
 
 .marco-dia-muertos::before,
@@ -3000,4 +3009,5 @@ button.punto { border-radius: 999px; }
         height: clamp(180px, 45vw, 260px);
         min-height: 0;
     }
+
 }
