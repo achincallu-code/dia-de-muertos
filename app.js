@@ -674,8 +674,7 @@ mostrarPregunta();
 
 // Aparición progresiva de cada sección al entrar en pantalla.
 if (
-    "IntersectionObserver" in window &&
-    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    "IntersectionObserver" in window
 ) {
     document.documentElement.classList.add("movimiento-listo");
     const observadorSecciones = new IntersectionObserver((entradas, observador) => {

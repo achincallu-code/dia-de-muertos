@@ -867,25 +867,6 @@ footer p {
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-
-    .lluvia-cempasuchil {
-        display: none;
-    }
-
-    .guirnalda span {
-        animation: none;
-    }
-}
-
 /* Rediseño integral: una noche cálida, viva y hecha de recuerdos */
 :root {
     --morado: #17111f;
@@ -1298,18 +1279,6 @@ button:not(:disabled):active,
     .dedicatoria { padding: 14px; }
     .subir-recuerdos { justify-content: center; }
     .boton-foto { font-size: 9px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within { scroll-behavior: auto; }
-    *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
-    .movimiento-listo .animar-entrada,
-    .movimiento-listo .animar-entrada.visible { opacity: 1; transform: none; }
 }
 
 /* Recuerdos en movimiento y detalles de altar */
@@ -1877,16 +1846,6 @@ main { width: min(1120px, 90%); }
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        animation: none !important;
-        transition: none !important;
-    }
-}
-
 /* Papel picado recortado, botones de cristal y detalles de temporada */
 .papel-altar {
     display: flex;
@@ -2220,10 +2179,6 @@ footer {
     .esquina-inferior-derecha { right: 1px; bottom: 1px; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .esquina { animation: none !important; }
-}
-
 /* Un puente de pétalos con alebrijes guardianes */
 .puente-seccion {
     position: relative;
@@ -2427,10 +2382,6 @@ footer {
     .alebrije-figura figcaption span { font-size: 7px; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .alebrije-figura img, .puente-escena, .ilustracion-puente, .petalo-camino { animation: none !important; transition: none !important; }
-}
-
 .almas-caminando {
     position: absolute;
     z-index: 2;
@@ -2502,19 +2453,11 @@ footer {
     .puente-escena { aspect-ratio: auto; height: clamp(220px, 62vw, 270px); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .alma, .alma-pierna, .alma-brazo, .alma-tunica { animation: none !important; }
-}
-
 @media (max-width: 600px) {
     .papel-altar { width: 96%; gap: 2px; }
     .papel-bandera { width: clamp(38px, 14vw, 54px); height: 64px; flex-basis: 54px; }
     .guirnalda span::after { top: 3px; }
     button:not(.vela), .boton-portada, .boton-foto { border-radius: 14px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .papel-bandera, .papel-altar, .guirnalda span::after { animation: none !important; }
 }
 
 /* Acabado final y movimiento para toda la página */
@@ -2632,17 +2575,6 @@ body {
     .marco-recuerdo span { font-size: 25px; }
     .marco-recuerdo small { font-size: 8px; }
     .calaverita-bailarina { top: 47%; font-size: 29px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
-    .movimiento-listo .animar-entrada,
-    .movimiento-listo .animar-entrada.visible { opacity: 1; transform: none; }
 }
 
 .icono-elemento {
@@ -2793,10 +2725,6 @@ body {
     .vaso-de-agua { width: 16px; height: 24px; }
     .guirnalda-altar { gap: 0; padding-right: 5px; padding-left: 5px; }
     .guirnalda-altar span { font-size: clamp(14px, 5vw, 19px); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .maceta-cempasuchil span, .pan-de-altar, .guirnalda-altar span { animation: none !important; }
 }
 
 /* Sistema glass consistente para todos los controles */
@@ -2963,10 +2891,6 @@ button.punto { border-radius: 999px; }
     .galeria button.flecha { border-radius: 50%; }
     .puntos button.punto { border-radius: 999px; }
     button.tarjeta { border-radius: 18px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    button, .boton-portada, .boton-foto, .vela { transition: none !important; }
 }
 
 /* Ajustes de encaje para teléfonos estrechos y orientación horizontal */
